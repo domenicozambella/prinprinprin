@@ -1,0 +1,260 @@
+\documentclass[10pt]{article}
+\usepackage{amsrefs}
+\usepackage[colorlinks=true,
+            bookmarksopen=false,
+            linkcolor=blue,
+            citecolor=red
+            ]{hyperref}
+\title{Prin prin prin}
+\author{Domenico Zambella}
+\begin{document}
+\maketitle
+\section{State of the art}
+Keisler measures where introduced by Jerome Keisler in a seminal article~\cite{MR890599} back in 1987.
+Yet they went almost unnoticed for the best part of three decades until Hrushovski, Peterzil, and Pillay used them to settle the Pillay conjectures on definably compact groups definable in o-minimal theories --a major open problem in \textit{model theory\/} and \textit{Lie group theory\/}~\cite{MR2373360}.
+
+Since then, Keisler measures have become an ubiquitous tool in both pure and applied model theory.
+Initially they played an important role in the context of NIP theories (theories without the indepence property, also known as dependent theories)~\cite{MR3560428}.
+For example they are a crucial tool in the study of definably amenable groups definable in NIP theories~\cite{MR3787403}, \cite{MR2427062}.
+But they are more and more frequently applied outside this context, e.g.\@ when only a single formula (not the whole theory) is NIP~\cite{MR4010500}, \cite{arXiv:2103.09946} or \textit{in the wild\/} i.e.\@ with no assumption of tameness~\cite{arXiv:2103.09946}.
+In fact, Keisler measures have interesting application in finite and pseudofinite combinatorics and allow us to generalize combinatorial results in a natural measure theoretic framework~\cite{MR4222408}, \cite{MR3666030}.
+
+Keisler measures also play a role in explaining important dividing lines between classes of theories.
+A pervasive theme in model theory is the discovery of basic combinatorial principles that saparete theories (or single formulas) that are tame/well-behaved/feasible/learnable from those that are not.
+One recent dividing line, that of textit{distal theories}, was recently introduced by Pierre Simon~\cite{MR3001548}.
+This dividing line can be characterized in different ways: using model theoretical tools (indiscernible sequences); finite combinatorial tools; but also by measure theoretic notions~\cite{MR3335415}.
+Each of these perspectives contributes to a deeper understanding of the phenomenon.
+A recent influential success of the notion of distality has been obtained by Chernikov and Starchenko~\cite{MR3852184} (see also~\cite{MR3503725}).
+They proved that distality induces strong regularity phenomena in graphs, hence that the relevance of the distiction distal/non distal has relevance in different areas of mathematics.
+
+\section{Descrizione di metodi, obiettivi, risultati, diffusione}
+
+\subsection{Randomization}
+Keisler measures are finitely additive measures on some algebra of definable sets usually of a saturated model.
+Keisler measures generalize the notion of type. 
+In fact, a complete type (i.e.\@ a set of formulas) may be viewed as a Keisler measure that assigns measure $1$ to sets definable by a formula in the type, and measure $0$ to all other definable sets.
+Types and measures form a syntactic, respectively measure-theoretic apparatus that we superimpose to the model. 
+For this reason, they escape the most common model theoretic techniques.
+Fortunately, in the case of types, there is an easy remedy.
+By the compactness theorem, every type can be realized in a sufficiently saturated elementary superstructure.
+Therefore types are natuarally identified with the (external) elements that realize them.
+These external elements are tractable with common model theoretical tecniques.
+
+Measures elude this approach. 
+For example, the common intuition is that the so called \textit{smooth measures\/} correspond to realized types, but this does not help in interpreting them as elements of a first-order model.
+A possible way out is to move away from classical logic. 
+Keisler and Ben Yaacov propose to interpret measures in continuous logic as types over a randomized structure~\cite{MR2561997} (the notion of randomization of a structure was previously and independently introduced by Keisler in~\cite{MR1680650}).
+This approach is definitely sound, but it adds many mathematical subtleties and notational hurdles to the descripion.
+This is why few people have embraced this approach.
+
+\subsection{Loeb samples}
+
+The alternative approach that we propose is low tech and is inspired by a classical idea of Loeb~\cite{MR1680650} widely used in nonstandard analisis.
+Every probability measure can be interpreted as a relative frequence evaluated on a sample of hyperfinite size.
+Classical first-oder logic is more suited to formalizing samples and frequences than real-valued set function.
+
+
+
+
+\subsection{}
+
+
+
+
+
+\section*{References}
+\begin{biblist}[]\normalsize
+\addcontentsline{toc}{section}{References}
+
+\bib{MR2561997}{article}{
+   author={Ben Yaacov, Ita\"{\i}},
+   author={Keisler, H. Jerome},
+   title={Randomizations of models as metric structures},
+   journal={Confluentes Math.},
+   volume={1},
+   date={2009},
+   number={2},
+   pages={197--223},
+   issn={1793-7442},
+   doi={10.1142/S1793744209000080},
+}
+\bib{MR3335415}{article}{
+   author={Chernikov, Artem},
+   author={Simon, Pierre},
+   title={Externally definable sets and dependent pairs II},
+   journal={Trans. Amer. Math. Soc.},
+   volume={367},
+   date={2015},
+   number={7},
+   pages={5217--5235},
+   issn={0002-9947},
+   doi={10.1090/S0002-9947-2015-06210-2},
+}
+\bib{MR3787403}{article}{
+  author={Chernikov, Artem},
+  author={Simon, Pierre},
+  title={Definably amenable NIP groups},
+  journal={J. Amer. Math. Soc.},
+  volume={31},
+  date={2018},
+  number={3},
+  pages={609--641},
+  issn={0894-0347},
+  doi={10.1090/jams/896},
+}
+\bib{MR3852184}{article}{
+   author={Chernikov, Artem},
+   author={Starchenko, Sergei},
+   title={Regularity lemma for distal structures},
+   journal={J. Eur. Math. Soc. (JEMS)},
+   volume={20},
+   date={2018},
+   number={10},
+   pages={2437--2466},
+   issn={1435-9855},
+   doi={10.4171/JEMS/816},
+}
+\bib{MR4010500}{article}{
+  author={Gannon, Kyle},
+  title={Local Keisler measures and NIP formulas},
+  journal={J. Symb. Log.},
+  volume={84},
+  date={2019},
+  number={3},
+  pages={1279--1292},
+  issn={0022-4812},
+  doi={10.1017/jsl.2019.34},
+}
+\bib{arXiv:2103.09946}{article}{
+  author={Gannon, Kyle},
+  title={Sequential approximations for types and Keisler measures},
+  date={2021},
+  pages={1--27},
+  note={Available at \href{https://arxiv.org/abs/2103.09946}{arXiv:2103.09946}},
+}
+\bib{arXiv:2103.09946}{article}{
+  author={Gannon, Kyle},
+  author={Hanson, James},
+  author={Conant, Gabriel},
+  title={Keisler measures in the wild},
+  date={2021},
+  pages={1--54},
+  note={Available at \href{https://arxiv.org/abs/2103.09137}{arXiv:2103.09137}},
+}
+\bib{MR2373360}{article}{
+  author={Hrushovski, Ehud},
+  author={Peterzil, Ya'acov},
+  author={Pillay, Anand},
+  title={Groups, measures, and the NIP},
+  journal={J. Amer. Math. Soc.},
+  volume={21},
+  date={2008},
+  number={2},
+  pages={563--596},
+  issn={0894-0347},
+  doi={10.1090/S0894-0347-07-00558-9},
+}
+\bib{MR890599}{article}{
+  author={Keisler, H. Jerome},
+  title={Measures and forking},
+  journal={Ann. Pure Appl. Logic},
+  volume={34},
+  date={1987},
+  number={2},
+  pages={119--169},
+  issn={0168-0072},
+  doi={10.1016/0168-0072(87)90069-8},
+}
+\bib{MR1680650}{article}{
+   author={Keisler, H. Jerome},
+   title={Randomizing a model},
+   journal={Adv. Math.},
+   volume={143},
+   date={1999},
+   number={1},
+   pages={124--158},
+   issn={0001-8708},
+   doi={10.1006/aima.1998.1793},
+}
+\bib{MR390154}{article}{
+   author={Loeb, Peter A.},
+   title={Conversion from nonstandard to standard measure spaces and
+   applications in probability theory},
+   journal={Trans. Amer. Math. Soc.},
+   volume={211},
+   date={1975},
+   pages={113--122},
+   issn={0002-9947},
+   doi={10.2307/1997222},
+}
+\bib{MR2427062}{article}{
+  author={Onshuus, A.},
+  author={Pillay, A.},
+  title={Definable groups and compact $p$-adic Lie groups},
+  journal={J. Lond. Math. Soc. (2)},
+  volume={78},
+  date={2008},
+  number={1},
+  pages={233--247},
+  issn={0024-6107},
+  doi={10.1112/jlms/jdn018},
+}
+\bib{MR4222408}{article}{
+  author={Pillay, Anand},
+  title={Domination and regularity},
+  journal={Bull. Symb. Log.},
+  volume={26},
+  date={2020},
+  number={2},
+  pages={103--117},
+  issn={1079-8986},
+  doi={10.1017/bsl.2020.40},
+}
+\bib{MR3001548}{article}{
+  author={Simon, Pierre},
+  title={Distal and non-distal NIP theories},
+  journal={Ann. Pure Appl. Logic},
+  volume={164},
+  date={2013},
+  number={3},
+  pages={294--318},
+  issn={0168-0072},
+  doi={10.1016/j.apal.2012.10.015},
+}
+\bib{MR3560428}{book}{
+  author={Simon, Pierre},
+  title={A guide to NIP theories},
+  series={Lecture Notes in Logic},
+  volume={44},
+  publisher={Association for Symbolic Logic, Chicago, IL; Cambridge
+  Scientific Publishers, Cambridge},
+  date={2015},
+  pages={vii+156},
+  isbn={978-1-107-05775-3},
+  doi={10.1017/CBO9781107415133},
+}
+\bib{MR3503725}{article}{
+   author={Simon, Pierre},
+   title={A note on ``Regularity lemma for distal structures''},
+   journal={Proc. Amer. Math. Soc.},
+   volume={144},
+   date={2016},
+   number={8},
+   pages={3573--3578},
+   issn={0002-9939},
+   doi={10.1090/proc/13080},
+}
+\bib{MR3666030}{article}{
+  author={Starchenko, Sergei},
+  title={NIP, Keisler measures and combinatorics},
+  note={S\'{e}minaire Bourbaki. Vol. 2015/2016. Expos\'{e}s 1104--1119},
+  journal={Ast\'{e}risque},
+  number={390},
+  date={2017},
+  pages={Exp. No. 1114, 303--334},
+  issn={0303-1179},
+  isbn={978-2-85629-855-8},
+}
+\end{biblist}
+  
+\end{document}
