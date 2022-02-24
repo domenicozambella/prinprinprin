@@ -10,22 +10,22 @@
 \begin{document}
 \maketitle
 \section{State of the art}
-Keisler measures where introduced by Jerome Keisler in a seminal article~\cite{MR890599} back in 1987.
-Yet they went almost unnoticed for the best part of three decades until Hrushovski, Peterzil, and Pillay used them to settle the Pillay conjectures on definably compact groups definable in o-minimal theories --a major open problem in \textit{model theory\/} and \textit{Lie group theory\/}~\cite{MR2373360}.
+Keisler measures were introduced by Jerome Keisler in a seminal article~\cite{MR890599} back in 1987.
+Yet they went almost unnoticed for the best part of three decades until Hrushovski, Peterzil, and Pillay used them to settle the Pillay conjecture on definably compact groups definable in o-minimal theories --~a major open problem in \textit{model theory\/} and \textit{Lie group theory\/}~\cite{MR2373360}.
 
 Since then, Keisler measures have become an ubiquitous tool in both pure and applied model theory.
-Initially they played an important role in the context of NIP theories (theories without the indepence property, also known as dependent theories)~\cite{MR3560428}.
-For example they are a crucial tool in the study of definably amenable groups definable in NIP theories~\cite{MR3787403}, \cite{MR2427062}.
+Initially they played an important role in the context of NIP theories (theories without the independence property, also known as dependent theories)~\cite{MR3560428}.
+For example they are a crucial tool in the study of definably amenable groups that are definable in NIP theories~\cite{MR3787403}, \cite{MR2427062}.
 But they are more and more frequently applied outside this context, e.g.\@ when only a single formula (not the whole theory) is NIP~\cite{MR4010500}, \cite{arXiv:2103.09946} or \textit{in the wild\/} i.e.\@ with no assumption of tameness~\cite{arXiv:2103.09946}.
 In fact, Keisler measures have interesting application in finite and pseudofinite combinatorics and allow us to generalize combinatorial results in a natural measure theoretic framework~\cite{MR4222408}, \cite{MR3666030}.
 
 Keisler measures also play a role in explaining important dividing lines between classes of theories.
-A pervasive theme in model theory is the discovery of basic combinatorial principles that saparete theories (or single formulas) that are tame/well-behaved/feasible/learnable from those that are not.
-One recent dividing line, that of textit{distal theories}, was recently introduced by Pierre Simon~\cite{MR3001548}.
-This dividing line can be characterized in different ways: using model theoretical tools (indiscernible sequences); finite combinatorial tools; but also by measure theoretic notions~\cite{MR3335415}.
+A pervasive theme in model theory is the discovery of basic combinatorial principles that separete theories (or single formulas) that are tame/well-behaved/feasible/learnable from those that are not.
+One recent dividing line, that of \textit{distal theories}, was recently introduced by Pierre Simon~\cite{MR3001548}.
+This dividing line can be characterized in different ways: using model-theoretic tools (indiscernible sequences); finite combinatorial tools; but also by measure theoretic notions~\cite{MR3335415}.
 Each of these perspectives contributes to a deeper understanding of the phenomenon.
 A recent influential success of the notion of distality has been obtained by Chernikov and Starchenko~\cite{MR3852184} (see also~\cite{MR3503725}).
-They proved that distality induces strong regularity phenomena in graphs, hence that the relevance of the distiction distal/non distal has relevance in different areas of mathematics.
+They proved that distality induces strong regularity phenomena in graphs, hence that the distiction distal/non distal has relevance in different areas of mathematics.
 
 \section{Descrizione di metodi, obiettivi, risultati, diffusione}
 
@@ -37,7 +37,7 @@ Types and measures form a syntactic, respectively measure-theoretic apparatus th
 For this reason, they escape the most common model theoretic techniques.
 Fortunately, in the case of types, there is an easy remedy.
 By the compactness theorem, every type can be realized in a sufficiently saturated elementary superstructure.
-Therefore types are natuarally identified with the (external) elements that realize them.
+Therefore types are naturarally identified with the (external) elements that realize them.
 These external elements are tractable with common model theoretical tecniques.
 
 Measures elude this approach. 
@@ -50,15 +50,28 @@ This is why few people have embraced this approach.
 \subsection{Loeb samples}
 
 The alternative approach that we propose is low tech and is inspired by a classical idea of Loeb~\cite{MR1680650} widely used in nonstandard analisis.
-Every probability measure can be interpreted as a relative frequence evaluated on a sample of hyperfinite size.
-Classical first-oder logic is more suited to formalizing samples and frequences than real-valued set function.
+Every probability measure can be interpreted as a relative frequence evaluated on a sample of hyperfinite size which we call \emph{Loeb sample}.
+Classical first-oder logic is more suited to formalizing samples and frequences than measures which real-valued set functions.
 
 
+\subsection{Objectives}
+We present two objectives that have different degrees of feasibility.
 
+The first project, that could take a few months of work, aims to reproduce some known results about Keisler measures using Loeb samples.
+A preliminary inquiry has shown that many proofs are sufficiently different to be of interest in their own right.
+This project can help to understand which notions better replace properties of Keisler measures.
+Loeb samples are slightly more general than Keisler measures, therefore the translation requires some scrutiny.
 
-\subsection{}
+Many regularity phenomena in Ramsey theory have two forms: a partition and a density version.
+For instance, Szemeredy's Theorem is the density form of van der Waerden's Theorem, which is the partition version.
+The density form of a Ramsey theoretic result need not be true.
+When it is true its proof is always considerably more difficult than its partition version.
+For instance, the first proof of the Density Hales-Jewett Theorem required considerable effort and a sophisticated machinery borrowed from ergodic theory~\cite{MR1191743}.
 
-
+Model theory is a very convenient tool to prove partition regularity results~\cite{arXiv:1901.04363}.
+Attempts have been made to apply model theory to prove density results (notably, \cite{arXiv:1002.4456} and \cite{MR3219561}) but it is unclear if this is the best approach.
+We propose to apply Loeb samples. 
+These offer a direct way to import the ideas in~\cite{arXiv:1901.04363} into a setting apt to discuss the density version of many results of partition regularity.
 
 
 
@@ -114,6 +127,25 @@ Classical first-oder logic is more suited to formalizing samples and frequences 
    issn={1435-9855},
    doi={10.4171/JEMS/816},
 }
+\bib{arXiv:1901.04363}{article}{
+  author={Colla, Eugenio},
+  author={Zambella, Domenico},
+  title={Ramsey coheirs},
+  date={2020},
+  pages={1--17},
+  note={Available at \href{https://arxiv.org/abs/1901.04363}{arXiv:1901.04363}},
+}
+\bib{MR1191743}{article}{
+   author={Furstenberg, H.},
+   author={Katznelson, Y.},
+   title={A density version of the Hales-Jewett theorem},
+   journal={J. Anal. Math.},
+   volume={57},
+   date={1991},
+   pages={64--119},
+   issn={0021-7670},
+   doi={10.1007/BF03041066},
+}
 \bib{MR4010500}{article}{
   author={Gannon, Kyle},
   title={Local Keisler measures and NIP formulas},
@@ -140,6 +172,18 @@ Classical first-oder logic is more suited to formalizing samples and frequences 
   date={2021},
   pages={1--54},
   note={Available at \href{https://arxiv.org/abs/2103.09137}{arXiv:2103.09137}},
+}
+\bib{MR3219561}{article}{
+  author={Goldbring, Isaac},
+  author={Towsner, Henry},
+  title={An approximate logic for measures},
+  journal={Israel J. Math.},
+  volume={199},
+  date={2014},
+  number={2},
+  pages={867--913},
+  issn={0021-2172},
+  doi={10.1007/s11856-013-0054-3},
 }
 \bib{MR2373360}{article}{
   author={Hrushovski, Ehud},
@@ -254,6 +298,13 @@ Classical first-oder logic is more suited to formalizing samples and frequences 
   pages={Exp. No. 1114, 303--334},
   issn={0303-1179},
   isbn={978-2-85629-855-8},
+}
+\bib{arXiv:1002.4456}{article}{
+  author={Towsner, Henry},
+  title={A model mheoretic proof of Szemerédi's Theorem},
+  date={2011},
+  pages={1--10},
+  note={Available at \href{https://arxiv.org/abs/1002.4456}{arXiv:1002.4456}},
 }
 \end{biblist}
   
